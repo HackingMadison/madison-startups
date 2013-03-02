@@ -1,21 +1,21 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Our Community Map
+  title: Madison Startup Map
   # Header name
-  name: Our Community Map
+  name: Madison Startup Map
   # Meta description that will show up in Google search results
-  meta_description: Our Community Map is a mapping tool to gather crowd sourced public input our community's places, the great ones and soon-to-be great ones!
+  meta_description: The Madison Startup Map is a mapping tool to gather crowd sourced places where Madison's startup offices are located!
 
 
 # Settings for map and layer configs
 map:
   options:
     center:
-      lat: 40.784896
-      lng: -73.976026
-    zoom: 14
-    minZoom: 13
+      lat: 43.0731
+      lng: -89.4011
+    zoom: 13
+    minZoom: 12
     maxZoom: 17
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-dmar86ym/{z}/{x}/{y}.png
@@ -102,23 +102,23 @@ place_type_icons:
 place:
   adding_supported: true
   title: Tell us more...
-  add_button_label: Add a Place
+  add_button_label: Add a Startup
   action_text: identified
   anonymous_name: Someone
   submit_button_label: Submit
   items:
-    - prompt: Place Name
+    - prompt: Startup Name
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: "Name"
+          value: "Startup"
         - key: size
           value: 30
     - prompt: Type of Place
       type: select
       options:
-        - Great Place
+        - Existing Startup
         - Potential Place
         - Problem Place
       name: location_type
@@ -191,3 +191,7 @@ pages:
       - title: Problem Places
         external: true
         url: /problem place
+
+  - title: HackingMadison
+    slug: HackingMadison
+    url: /static/pages/hackingmadison.html
